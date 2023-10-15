@@ -1,4 +1,4 @@
-import transactions from './transactions.json';
+import transactions from '../../data/transactions.json';
 import css from './TransactionHistory.module.css';
 export const TransactionHistory = () => {
   return <TransactionHistoryHtml items={transactions} />;
