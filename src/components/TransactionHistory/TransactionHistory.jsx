@@ -1,10 +1,6 @@
-import transactions from '../../data/transactions.json';
 import css from './TransactionHistory.module.css';
-export const TransactionHistory = () => {
-  return <TransactionHistoryHtml items={transactions} />;
-};
 
-const TransactionHistoryHtml = ({ items }) => {
+export const TransactionHistory = ({ items }) => {
   return (
     <table className={css.transactionHistory}>
       <thead className={css.transactionTable}>

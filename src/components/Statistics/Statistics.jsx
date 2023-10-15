@@ -1,4 +1,3 @@
-import data from '../../data/data.json';
 import css from './Statistics.module.css';
 
 function generateRandomColor() {
@@ -8,11 +7,7 @@ function generateRandomColor() {
   return `rgb(${r},${g},${b})`;
 }
 
-export const Statistics = () => {
-  return <StatisticsHtml title="Upload stats" stats={data} />;
-};
-
-const StatisticsHtml = ({ title, stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <div className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
